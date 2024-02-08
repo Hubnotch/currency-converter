@@ -1,3 +1,5 @@
+<section class="container">
+  
 <h1>Currency Converter</h1>
 
 <form [formGroup]="currencyForm" (ngSubmit)="convertCurrency()">
@@ -12,6 +14,7 @@
           <option *ngFor="let currency of availableCurrencies" [value]="currency">{{ currency }}</option>
         </select>
       </div>
+      <button class="form-group switch"> &#8596;</button>
       <div class="form-group">
         <label for="toCurrency">To:</label>
         <select class="form-control" id="toCurrency" formControlName="toCurrency" required>
@@ -22,3 +25,11 @@
     <button type="submit" class="btn">Convert</button>
   </form>
   
+
+  <div class="exchange-rate">
+    <div class="rate-bar first-btn">1.00 EUR = XX XX USD</div>
+    <div class="rate-bar second-btn">XX XX USD</div>
+    <div class="rate-bar third-btn">More Details</div>
+  </div>
+
+</section>
