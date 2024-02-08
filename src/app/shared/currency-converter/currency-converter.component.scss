@@ -21,10 +21,14 @@
 //     border-radius: .25rem;
 //   }
   
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
 .form-row {
   display: flex;
-  flex-wrap: wrap; 
+  // flex-wrap: wrap; 
   margin-right: -15px;
   margin-left: -15px;
   align-items: center; 
@@ -48,6 +52,11 @@
 }
 
 .label {
-  display: block; /* Ensure correct label formatting */
-  margin-bottom: 5px; /* Add spacing between label and input */
+  display: block; 
+  margin-bottom: 5px; 
+}
+.btn{
+  align-self: flex-end;
+  width: 60%;
+}
 }
