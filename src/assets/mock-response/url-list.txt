@@ -1,0 +1,12 @@
+currency list 
+https://api.freecurrencyapi.com/v1/currencies?apikey=fca_live_bxWFhJkLn8mv0ksdD03rBjCxAqqgZMGfDXmjRM3O&currencies=EUR%2CUSD%2CCAD
+
+latest exchange
+https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_bxWFhJkLn8mv0ksdD03rBjCxAqqgZMGfDXmjRM3O&currencies=EUR%2CUSD%2CCAD
+
+status
+https://api.freecurrencyapi.com/v1/status?apikey=fca_live_bxWFhJkLn8mv0ksdD03rBjCxAqqgZMGfDXmjRM3O
+
+
+historical
+https://api.freecurrencyapi.com/v1/historical?apikey=fca_live_bxWFhJkLn8mv0ksdD03rBjCxAqqgZMGfDXmjRM3O&currencies=EUR%2CUSD%2CCAD&date_from=2024-02-06T20%3A52%3A52.976Z&date_to=2024-02-08T20%3A52%3A52.976Z
