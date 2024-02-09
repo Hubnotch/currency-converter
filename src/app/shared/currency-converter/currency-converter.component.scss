@@ -40,6 +40,7 @@ margin: 0;
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
+  outline: none;
 }
 
 .label {
@@ -47,6 +48,9 @@ margin: 0;
   margin-bottom: 5px; 
 }
 .btn{
+  background: powderblue;
+  border-radius: .25rem;
+  border: none;
   align-self: flex-end;
   width: 60%;
   padding: .45rem .75rem;
@@ -68,5 +72,8 @@ margin: 0;
   }
   .third-btn{
     cursor: pointer;
+    background: powderblue;
+    outline: none;
+    color: black;
   }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { CurrencyExchangeRates } from 'src/app/core/models/currencyRate';
 import { CurrencyServiceService } from 'src/app/core/services/currency-service.service';
 
 @Component({
@@ -9,8 +10,8 @@ import { CurrencyServiceService } from 'src/app/core/services/currency-service.s
 })
 export class CurrencyConverterComponent {
   public currentCurrencyStatus:any = [];
-  public usdRate!:string;
-  public eurRate!:string;
+  public usdRate!:number;
+  public eurRate!:number;
   currencyForm: FormGroup;
   availableCurrencies: string[] = ['USD', 'EUR', 'GBP', 'JPY', 'AUD'];
 
@@ -24,15 +25,15 @@ export class CurrencyConverterComponent {
 
   ngOnInit():void{
 this.currencyService.getCurrencyStatus().subscribe(
-  data=> {
+  (data:CurrencyExchangeRates)=> {
     let rates =Object.entries(data.data).map(([currency, rate]) => ({ currency, rate }));
     this.currentCurrencyStatus = rates;
     for(let rate of rates){
     if(rate.currency === 'USD') {
-      this.usdRate = rate.rate as string;
+      this.usdRate = rate.rate;
     }
     if(rate.currency === 'EUR') {
-      this.eurRate = rate.rate as string;
+      this.eurRate = rate.rate;
         }
     }
     console.log(this.currentCurrencyStatus);

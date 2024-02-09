@@ -22,7 +22,7 @@
         </select>
       </div>
     </div>
-    <button type="submit" class="btn">Convert</button>
+    <button [disabled]="!currencyForm.valid" type="submit" class="btn">Convert</button>
   </form>
   
 
