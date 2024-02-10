@@ -4,6 +4,7 @@ import { NavComponent } from './nav/nav.component';
 import { CurrencyConverterComponent } from './currency-converter/currency-converter.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CurrencyConverterHistoryComponent } from './currency-converter-history/currency-converter-history.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -22,6 +23,7 @@ import { CurrencyConverterHistoryComponent } from './currency-converter-history/
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     ReactiveFormsModule
   ]
 })

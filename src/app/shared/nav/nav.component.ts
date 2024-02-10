@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent {
-navigateTo(arg0: string) {
-throw new Error('Method not implemented.');
-}
 
 }

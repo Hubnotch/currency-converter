@@ -36,7 +36,6 @@ this.currencyService.getCurrencyStatus().subscribe(
       this.eurRate = rate.rate;
         }
     }
-    console.log(this.currentCurrencyStatus);
   }
 )
 
