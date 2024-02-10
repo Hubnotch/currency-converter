@@ -42,7 +42,6 @@ this.currencyService.getCurrencyStatus().subscribe(
 
   };
   convertCurrency() {
-    // Call your currency converter service with form data
-    // Update the UI with the conversion result
+  return;
   }
 }
