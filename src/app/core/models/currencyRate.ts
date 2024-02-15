@@ -3,3 +3,8 @@ export interface CurrencyExchangeRates {
         [currency: string]: number;
     };
 }
+
+export interface CurrencyPair {
+    base: string;
+    symbols: string[];
+  }
