@@ -22,7 +22,9 @@ export class CurrencyServiceService {
   public getEchangeRate(currencyPair: CurrencyPair): Observable<any> {
     const params = new HttpParams();
     params.set('apiKey', this.apiKey);
-    params.set('q', `${currencyPair.base}_${currencyPair.symbols.join(',')}`);
+    params.set('q', `${currencyPair.base}_${currencyPair.symbols}`);
+    // params.set('q', `${currencyPair.base}_${currencyPair.symbols.join(',')}`);
+    console.log(params)
     return this.http.get<any>(this.baseUrl, { params });
   }
 

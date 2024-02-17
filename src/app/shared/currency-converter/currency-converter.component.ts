@@ -24,6 +24,7 @@ export class CurrencyConverterComponent implements OnInit{
   }
 
   ngOnInit():void{
+    this.getExchangeRates();
 this.currencyService.getCurrencyStatus().subscribe(
   (data:CurrencyExchangeRates)=> {
     const rates =Object.entries(data.data).map(([currency, rate]) => ({ currency, rate }));
@@ -46,6 +47,7 @@ this.currencyService.getCurrencyStatus().subscribe(
     this.currencyService
     .getEchangeRate({ base: this.currencyForm?.get('fromCurrency')?.value, symbols: this.currencyForm?.get('toCurrency')?.value })
       .subscribe(data => {
+        console.log(data);
         this.exchangeRates = data;
       });
   }
