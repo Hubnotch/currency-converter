@@ -9,7 +9,7 @@ import { CurrencyServiceService } from 'src/app/core/services/currency-service.s
   styleUrls: ['./currency-converter.component.scss']
 })
 export class CurrencyConverterComponent implements OnInit{
-  public currentCurrencyStatus:any = [];
+  public currentCurrencyStatus:unknown = [];
   public usdRate!:number;
   public eurRate!:number;
   currencyForm: FormGroup;
